@@ -1,7 +1,7 @@
-package org.example;
+package org.example.basics;
 
-import org.example.publisher.PublisherImpl;
-import org.example.subscrber.SubscriberImpl;
+import org.example.basics.publisher.PublisherImpl;
+import org.example.basics.subscrber.SubscriberImpl;
 
 import java.time.Duration;
 
