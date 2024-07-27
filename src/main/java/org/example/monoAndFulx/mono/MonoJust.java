@@ -1,6 +1,5 @@
-package org.example.monoAndFulx;
+package org.example.monoAndFulx.mono;
 
-import org.example.basics.publisher.SubscriptionImpl;
 import org.example.basics.subscrber.SubscriberImpl;
 import reactor.core.publisher.Mono;
 
