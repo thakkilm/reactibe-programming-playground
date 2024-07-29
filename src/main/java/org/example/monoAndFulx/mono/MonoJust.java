@@ -9,6 +9,6 @@ public class MonoJust {
         var mono= Mono.just("Mahesh");
         SubscriberImpl subscriber=new SubscriberImpl();
         mono.subscribe(subscriber);
-        subscriber.getSubscription().request(2);
+        subscriber.getSubscription().request(1);
     }
 }
