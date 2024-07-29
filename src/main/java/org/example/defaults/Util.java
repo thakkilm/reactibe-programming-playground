@@ -13,10 +13,4 @@ public class Util {
         return new DefaultSubscriber<>(name);
     }
 
-    public static void main(String[] args) {
-        var mono= Mono.just(1);
-        mono.subscribe(subscriber());
-        mono.subscribe(subscriber("one"));
-        mono.subscribe(subscriber("two"));
-    }
 }
