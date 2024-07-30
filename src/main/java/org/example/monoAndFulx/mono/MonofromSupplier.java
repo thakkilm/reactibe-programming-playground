@@ -12,11 +12,13 @@ public class MonofromSupplier {
 
     public static void main(String[] args) {
 
-        //From the below, even though we are not calling the subscribe method the sum method will get executed
+        //From the below, even though we are not calling the subscribe method the sum method will get executed without delaying
         Mono.just(sum(List.of(1,2,3))).subscribe(Util.subscriber("Mahesh"));
 
-        //Unless until the subscriber is initialized we will not see the sum method executed
+        //Unless until the subscriber is initialized we will not see the sum method executed and will delay the execution
         Mono.fromSupplier(()->sum(List.of(1,2,3))).subscribe(Util.subscriber("Mahesh"));
+
+
     }
 
     public static int sum(List<Integer> list){
