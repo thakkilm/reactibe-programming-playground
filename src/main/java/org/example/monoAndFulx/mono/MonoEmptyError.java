@@ -8,10 +8,12 @@ public class MonoEmptyError {
     public static void main(String[] args) {
 
         //Prints Mahesh
-        getUserName(1).subscribe(Util.subscriber());
+        getUserName(1).subscribe(Util.subscriber("One"));
 
         //Received null value and prints nothing
         getUserName(2).subscribe(Util.subscriber());
+
+        getUserName(1).subscribe(s-> System.out.println(s));
 
         //Throws error
         getUserName(3).subscribe(Util.subscriber());
